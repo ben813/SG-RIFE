@@ -49,14 +49,26 @@ Experiments on the **SNU-FILM (Hard)** benchmark demonstrate that SG-RIFE matche
 > **Analysis**: SG-RIFE outperforms LDMVFI in FID by a margin of 8.62 and reaches numerical parity with Consec. BB, proving that **semantic consistency enables flow-based methods to achieve diffusion-level quality.**
 
 ---
-
 ## 🛠️ Installation
 
+### 1. Clone the Repository
+**Important:** Use the `--recursive` flag to automatically download the DINOv3 submodule.
+
 ```bash
-git clone https://github.com/ben813/sg-rife.git
+git clone --recursive https://github.com/ben813/sg-rife.git
 cd sg-rife
+```
+If you forgot --recursive and the dinov3_repo folder is empty, run:
+```bash
+git submodule update --init --recursive
+```
+
+### 2. Install Dependencies
+```bash
 pip3 install -r requirements.txt
 ```
+
+### 3. Download Pre-trained Models
 * Download the DINOv3 weights from [here](https://github.com/facebookresearch/dinov3) and move it to dinov3_checkpoint/*
 * Download the checkpoint from [here](https://drive.google.com/drive/folders/11OVW2MQUXK6MgkPuJJJNubinBlMXADlP?usp=sharing) and move it to train_log_dino/*
 * Set the correct dino model name and path in `dino_config.py`.
