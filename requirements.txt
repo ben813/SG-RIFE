@@ -5,3 +5,18 @@ torch>=1.6.0
 opencv-python>=4.1.2 
 moviepy>=1.0.3 
 torchvision>=0.7.0
+
+# DINOv3 requirement
+ftfy
+omegaconf
+regex
+scikit-learn
+submitit
+termcolor
+torchmetrics
+
+tensorboard
+
+# Evaluation
+lpips
+fid_score
