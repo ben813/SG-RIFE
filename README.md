@@ -59,6 +59,7 @@ pip3 install -r requirements.txt
 ```
 * Download the DINOv3 weights from [here](https://github.com/facebookresearch/dinov3) and move it to dinov3_checkpoint/*
 * Download the checkpoint from [here](https://drive.google.com/drive/folders/11OVW2MQUXK6MgkPuJJJNubinBlMXADlP?usp=sharing) and move it to train_log_dino/*
+* Set the correct dino model name and path in `dino_config.py`.
 
 ## 💻 Usage
 ```bash
